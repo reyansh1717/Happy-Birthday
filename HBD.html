@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: radial-gradient(circle, #ff4d4d, #32cd32);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      color: white;
+    }
+    .container {
+      text-align: center;
+      z-index: 1;
+      position: relative;
+    }
+    h1 {
+      font-size: 4rem;
+      margin: 0;
+      background: linear-gradient(45deg, #ff4d4d, #32cd32);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s infinite;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 10px;
+      animation: fadeIn 3s infinite;
+    }
+    .balloons {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .balloon {
+      position: absolute;
+      bottom: -100px;
+      width: 80px;
+      height: 110px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+      animation: float 8s ease-in-out infinite;
+    }
+    .balloon:nth-child(1) {
+      left: 20%;
+      background: linear-gradient(to top, #ff4d4d, #ff7373);
+      animation-delay: 1s;
+    }
+    .balloon:nth-child(1)::before {
+      content: 'R';
+    }
+    .balloon:nth-child(2) {
+      left: 50%;
+      background: linear-gradient(to top, #32cd32, #99ff99);
+      animation-delay: 3s;
+    }
+    .balloon:nth-child(2)::before {
+      content: 'S';
+    }
+    .balloon:nth-child(3) {
+      left: 70%;
+      background: linear-gradient(to top, #ff4d4d, #ff9999);
+      animation-delay: 5s;
+    }
+    .balloon:nth-child(3)::before {
+      content: 'R';
+    }
+    .balloon:nth-child(4) {
+      left: 30%;
+      background: linear-gradient(to top, #32cd32, #99ff99);
+      animation-delay: 7s;
+    }
+    .balloon:nth-child(4)::before {
+      content: 'S';
+    }
+    .balloon::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      width: 2px;
+      height: 60px;
+      background: white;
+      transform: translateX(-50%);
+    }
+
+    @keyframes fadeIn {
+      0%, 100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #ff4d4d, 0 0 20px #32cd32, 0 0 30px #ff4d4d;
+      }
+      100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #32cd32, 0 0 30px #ff4d4d, 0 0 40px #32cd32;
+      }
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-50px);
+      }
+      100% {
+        transform: translateY(-120%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Happy Birthday! 🎂</h1>
+<h2>wishing u a very happy birthday my love, may all ur wishes come true and lord jaggarnath bless us in this wonderful occasion. A precious and joyful birthday we will celebrate together in coming years. lord jaggarnath is with us and get well soon baccha. miss u, always with you. try login, if possible.</h2>
+    <h2>Wishing you a day full of love, joy, and cherished moments!</h2>
+  </div>
+  <div class="balloons">
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+  </div>
+</body>
+</html>
